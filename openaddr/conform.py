@@ -40,7 +40,8 @@ gdal.PushErrorHandler(gdal_error_handler)
 
 
 # The canonical output schema for conform
-OPENADDR_CSV_SCHEMA = ['LON', 'LAT', 'NUMBER', 'STREET', 'UNIT', 'CITY',
+OPENADDR_CSV_SCHEMA = ['LON', 'LAT', 'NUMBER', 'STREET', 'STR_NAME',
+                       'STR_TYPE', 'STR_DIR', 'FULL_ADDR','UNIT', 'CITY',
                        'DISTRICT', 'REGION', 'POSTCODE', 'ID', 'HASH']
 
 # Field names for use in cached CSV files.
@@ -1254,6 +1255,10 @@ def row_convert_to_out(sd, row):
         "UNIT": row.get(keys['unit'], None) if keys['unit'] else None,
         "NUMBER": row.get(keys['number'], None) if keys['number'] else None,
         "STREET": row.get(keys['street'], None) if keys['street'] else None,
+        "STR_NAME": row.get(keys['str_name'], None) if keys['str_name'] else None,
+        "STR_TYPE": row.get(keys['str_type'], None) if keys['str_type'] else None,
+        "STR_DIR": row.get(keys['str_dir'], None) if keys['str_dir'] else None,
+        "FULL_ADDR": row.get(keys['full_addr'], None) if keys['full_addr'] else None,
         "CITY": row.get(keys['city'], None) if keys['city'] else None,
         "DISTRICT": row.get(keys['district'], None) if keys['district'] else None,
         "REGION": row.get(keys['region'], None) if keys['region'] else None,
