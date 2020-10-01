@@ -50,6 +50,10 @@ GEOM_FIELDNAME = 'OA:geom'
 X_FIELDNAME, Y_FIELDNAME = 'OA:x', 'OA:y'
 attrib_types = {
     'street':   'OA:street',
+    'str_name': 'OA:str_name',
+    'str_type': 'OA:str_ntype',
+    'str_dir': 'OA:str_dir',
+    'full_addr': 'OA:full_addr',
     'number':   'OA:number',
     'unit':     'OA:unit',
     'city':     'OA:city',
