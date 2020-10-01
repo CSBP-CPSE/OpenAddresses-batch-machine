@@ -12,8 +12,8 @@ RUN git clone -b 1.35.0 https://github.com/mapbox/tippecanoe.git /tmp/tippecanoe
     PREFIX=/usr/local make install && \
     rm -rf /tmp/tippecanoe
 
-WORKDIR /usr/local/src/batch-machine-test
-ADD . /usr/local/src/batch-machine-test
+WORKDIR /usr/local/src/TESTING/batch-machine
+ADD . /usr/local/src/TESTING/batch-machine
 
 RUN pip3 install .
 
