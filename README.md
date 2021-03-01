@@ -1,14 +1,8 @@
-This has been forked from the OpenAddresses project. Some small modifications have been made to the conform.py code in order to add additional standard columns during processing.
+This has been forked from the OpenAddresses project (https://github.com/openaddresses). Some small modifications have been made to the conform.py code in order to add additional standard columns during processing.
 
 <h1 align="center">OA Machine</h1>
 
-Scripts for performing ETL on a single source, passing the end result to the [openaddresses/batch](https://github.com/openaddresses/batch) service
-Uses [OpenAddresses](https://github.com/openaddresses/openaddresses) data sources to work.
+This step is used to collect data from individual sources and perform basic processing to align the data sets to a common set of columns.
 
-## Status
 
-This code is being used to process the complete OA dataset on a weekly and on-demand
-basis, with output visible at [batch.openaddresses.io](https://batch.openaddresses.io).
-
-These scripts are wrapped by the main [openaddresses/batch](https://github.com/openaddresses/batch) processor.
 
